@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.bresee.breseefaceapitest.camera.CameraPreview
+        android:id="@+id/preview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center" />
+
+    <com.bresee.breseefaceapitest.camera.CameraPreview
+        android:id="@+id/preview_ir"
+        android:layout_width="77dp"
+        android:layout_height="155dp"
+        android:layout_alignEnd="@+id/fcview"
+        android:layout_alignBottom="@+id/fcview"
+        android:layout_gravity="top"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="66dp" />
+
+    <com.bresee.breseefaceapitest.FaceView
+        android:id="@+id/fcview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="100dp"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_red_light"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/setting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="-1dp"
+        android:layout_marginBottom="4dp"
+        android:backgroundTint="@color/colorAccent"
+        android:text="人脸注册"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="81dp"
+        android:layout_marginBottom="4dp"
+        android:backgroundTint="#8BC34A"
+        android:text="库人脸删除"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="171dp"
+        android:layout_marginBottom="4dp"
+        android:backgroundTint="@android:color/holo_orange_dark"
+        android:text="退出"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/vesion"
+        android:layout_width="254dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="-1dp"
+        android:layout_marginBottom="8dp"
+        android:text="TextView"
+        android:textColor="#0F0E0E"
+        android:textSize="12sp" />
+
+</RelativeLayout>
