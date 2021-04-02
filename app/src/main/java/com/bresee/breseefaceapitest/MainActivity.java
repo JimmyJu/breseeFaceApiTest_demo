@@ -52,6 +52,7 @@ import static com.bresee.breseefaceapitest.ConfigParam.onlineLicenseButton;
 public class MainActivity extends Activity {
     public final String TAG = "MainActivity";
 
+
     private FaceConfigSetting faceConfigSetting;
     private PointerByReference faceDetHandle;
     private PointerByReference faceExtrHandle;
